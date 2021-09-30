@@ -12,9 +12,6 @@ async function search_one(query, language) {
     'pageEnd': 2,
     'language': language
   });
-  console.log(`Pesquisando por: ${query}`);
-  console.log(`Idioma: ${language}`);
-  console.log(results);
   let videos = results.videos;
   if (!videos || !videos.length) {
     return null;
