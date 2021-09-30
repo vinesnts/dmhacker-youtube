@@ -13,7 +13,7 @@ async function search_one(query, language) {
     'language': language
   });
   console.log(`Pesquisando por: ${query}`);
-  console.log(`Idioma: ${query}`);
+  console.log(`Idioma: ${language}`);
   console.log(results);
   let videos = results.videos;
   if (!videos || !videos.length) {
