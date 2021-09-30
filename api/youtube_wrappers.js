@@ -6,12 +6,7 @@ var yts = require('yt-search');
 const YOUTUBE_URL_PREFIX = "https://www.youtube.com/watch?v=";
 
 async function search_one(query, language) {
-  let results = await yts({
-    'query': query,
-    'pageStart': 1,
-    'pageEnd': 2,
-    'language': language
-  });
+  let results = await yts(query);
   console.log(`Pesquisando por: ${query}`);
   console.log(`Idioma: ${language}`);
   console.log(results);
